@@ -1,0 +1,14 @@
+.text-bold {
+  font-weight: 700;
+}
+
+.lead {
+  color: $colorLead;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.link-reset {
+  text-decoration: none;
+  color: unset;
+}

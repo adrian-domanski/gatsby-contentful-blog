@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap&subset=latin-ext");
+@import "./var";
+@import "./global";
+
+@import "./components/header";
+@import "./components/footer";
+@import "./components/postTile";
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/contact";
+@import "./pages/blogPost";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: $font;
+}
+
+.my-page-grid {
+  display: grid;
+  grid-template-rows: 70px 1fr 50px;
+  min-height: 100vh;
+}
+
+.container {
+  padding: 2rem;
+}
+
+// - - - - - - -
+// Global Media
+// - - - - - - -
+
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 3rem 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}

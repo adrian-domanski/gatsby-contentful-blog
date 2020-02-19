@@ -1,0 +1,85 @@
+.nav {
+  background-color: $themeColor;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem 0.5rem 2rem;
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  background-color: darken($themeColor, 3%);
+  width: 100%;
+  border-top: 2px solid darken($themeColor, 5%);
+  flex-direction: column;
+  text-align: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.1s ease;
+
+  &.active {
+    transform: scaleY(1);
+  }
+}
+
+.nav__item-link {
+  color: $white;
+  display: block;
+  padding: 1rem 0;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.nav-link__active {
+  font-weight: bold;
+}
+
+.nav__logo-title {
+  font-size: 2rem;
+}
+
+.nav__toggler {
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    position: static;
+    background-color: unset;
+    width: auto;
+    border-top: none;
+    flex-direction: row;
+    text-align: unset;
+    transform: scaleY(1);
+
+    &.active {
+      transform: scaleY(1);
+    }
+  }
+
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  .nav__item-link {
+    font-size: 1rem;
+  }
+}

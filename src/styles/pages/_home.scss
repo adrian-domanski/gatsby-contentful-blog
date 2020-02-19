@@ -1,0 +1,68 @@
+.home-page {
+  // - - - - - - - - -
+  // Home Page Styles
+  // - - - - - - - - -
+  .home-baner__img {
+    max-height: 500px;
+  }
+  // Welcome
+  .home-welcome__title {
+    color: $mainDark;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: $mainHeaderSize;
+  }
+
+  .home-welcome__face {
+    width: 50%;
+    margin: 2rem auto;
+  }
+
+  .home-welcom__text {
+    text-align: center;
+  }
+
+  // Recent Posts
+  .recent-posts__title {
+    text-align: center;
+    margin: 3rem 0 2rem;
+    color: $mainDark;
+    font-size: $subHeaderSize;
+  }
+
+  .recent-posts__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    grid-auto-rows: minmax(min-content, max-content);
+  }
+
+  // - - -
+  // Media
+  // - - -
+  @media screen and (min-width: 600px) {
+    .home-welcome__face {
+      max-width: 40%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .home-welcome__face {
+      max-width: 250px;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .recent-posts__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .recent-posts__grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+    }
+  }
+}

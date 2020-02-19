@@ -1,0 +1,86 @@
+.contact-page {
+  // - - - - - - -
+  // Contact page
+  // - - - - - - -
+  margin: 1rem 0;
+  text-align: center;
+
+  .contact-page__title {
+    color: $mainDark;
+    font-size: $mainHeaderSize;
+  }
+  .contact-me-section__title {
+    margin-bottom: 3rem;
+  }
+
+  .contact-item__icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: $colorLead;
+  }
+
+  .contact-item {
+    margin-bottom: 2rem;
+  }
+
+  .contact-me-section {
+    margin-bottom: 3rem;
+  }
+
+  .contact-page-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form-section__title {
+    margin-bottom: 2rem;
+  }
+
+  .btn,
+  .input-text,
+  .input-textarea {
+    border: none;
+    outline: none;
+    font-family: $font;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 3px 2px rgba(167, 167, 167, 0.4);
+  }
+
+  .input-text {
+    padding: 1rem;
+    border: 1px solid #999999;
+  }
+
+  .contact-form-page__email {
+    margin-bottom: 1rem;
+  }
+
+  .contact-form-page__input-message {
+    padding: 1rem;
+    border: 1px solid #999999;
+    margin-bottom: 1rem;
+    min-height: 200px;
+  }
+
+  .btn--submit {
+    padding: 1rem;
+    background-color: $themeColor;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &.container {
+      max-width: 920px;
+    }
+
+    .contact-me-section {
+      margin-bottom: 1rem;
+    }
+    .contact-me-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

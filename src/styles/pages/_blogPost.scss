@@ -1,0 +1,42 @@
+.blog-post-details {
+  // - - - - - - - - -
+  // Blog post deails
+  // - - - - - - - - -
+  text-align: center;
+  .blog-post-details__title {
+    color: $mainDark;
+  }
+
+  .blog-post-details__img {
+    margin: 2rem 0;
+  }
+
+  // Rich text
+  .blog-post-details__body-context {
+    p {
+      color: $colorLead;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin: 1.5rem 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $mainDark;
+    }
+  }
+
+  // - - - -
+  // Media
+  // - - - -
+}
+
+@media screen and (min-width: 768px) {
+  .container.blog-post-details {
+    max-width: 920px;
+  }
+}

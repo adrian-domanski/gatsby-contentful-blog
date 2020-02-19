@@ -1,0 +1,46 @@
+.post-tile {
+  text-align: center;
+  cursor: pointer;
+  color: $mainDark;
+  border: 1px solid #e1e1e1;
+  box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.post-tile-content {
+  padding: 2rem;
+}
+
+.post-tile__title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.post-tile__description {
+  color: $colorLead;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.post-tile__read-more {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.post-tile__img {
+  height: 300px;
+}
+
+.post-title__link {
+  display: block;
+  height: 100%;
+}
+
+// - - - -
+// Media
+// - - - -
+@media screen and(min-width: 768px) {
+  .post-tile__description {
+    margin: 1.5rem 0;
+  }
+}

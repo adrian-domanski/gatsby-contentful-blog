@@ -40,6 +40,11 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          name: `viewport`,
+          content:
+            "width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no",
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -68,7 +73,12 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script
+        src="https://kit.fontawesome.com/67491f19fa.js"
+        crossorigin="anonymous"
+      ></script>
+    </Helmet>
   )
 }
 
